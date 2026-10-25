@@ -59,12 +59,12 @@ const SkillsLogos = [
 const socials = [
   {
     name: "github",
-    imgPath: "/images/github.svg",
+    imgPath: `${import.meta.env.BASE_URL}images/github.svg`,
     url: "https://github.com/Dejvi-Blushi"
   },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.svg",
+    imgPath: `${import.meta.env.BASE_URL}images/linkedin.svg`,
     url: "https://www.linkedin.com/in/dejvi-blushi/"
   }
 ];

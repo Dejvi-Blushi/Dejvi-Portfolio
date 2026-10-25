@@ -44,7 +44,10 @@ export default function Hero() {
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/hero-bg.png" alt="hero background" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
+          alt="hero background"
+        />
       </div>
 
       <div className="hero-layout">

@@ -59,7 +59,10 @@ export default function Projects() {
           <div className="first-project-wrapper" ref={project1Ref}>
             <a href="https://real-estate-app-dejvi.vercel.app">
               <div className="image-wrapper card-border rounded-lg p-10">
-                <img src="/images/project1.png" alt="T&T Real Estate" />
+                <img
+                  src={`${import.meta.env.BASE_URL}images/project1.png`}
+                  alt="T&T Real Estate"
+                />
               </div>
             </a>
 
@@ -72,7 +75,10 @@ export default function Projects() {
             <div className="project" ref={project2Ref}>
               <a href="https://crypto-app-dejvi.vercel.app">
                 <div className="image-wrapper card-border rounded-lg p-10">
-                  <img src="/images/project2.png" alt="CryptoApp" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/project2.png`}
+                    alt="CryptoApp"
+                  />
                 </div>
               </a>
 
@@ -82,7 +88,10 @@ export default function Projects() {
             <div className="project" ref={project3Ref}>
               <a href="https://dejvi-blushi.github.io/Naruto-Storm-2-DEMO">
                 <div className="image-wrapper card-border rounded-lg p-10">
-                  <img src="/images/project3.png" alt="Naruto Storm 2 DEMO" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/project3.png`}
+                    alt="Naruto Storm 2 DEMO"
+                  />
                 </div>
               </a>
 
