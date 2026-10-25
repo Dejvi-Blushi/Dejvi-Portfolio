@@ -47,7 +47,9 @@ const windowMaterial = new THREE.MeshPhongMaterial({
 });
 
 export function Room(props: ThreeElements["group"]) {
-  const {nodes, materials} = useGLTF("/models/room.glb") as unknown as {
+  const {nodes, materials} = useGLTF(
+    `${import.meta.env.BASE_URL}models/room.glb`
+  ) as unknown as {
     nodes: Record<string, THREE.Mesh>;
     materials: Record<string, THREE.Material>;
   };
@@ -198,4 +200,4 @@ export function Room(props: ThreeElements["group"]) {
   );
 }
 
-useGLTF.preload("/models/room.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}/models/room.glb`);
