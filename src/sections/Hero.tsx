@@ -92,7 +92,9 @@ export default function Hero() {
                 <span>See my Work</span>
 
                 <div className="arrow-wrapper">
-                  <img src="/images/arrow-down.svg" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/arrow-down.svg`}
+                  />
                 </div>
               </div>
             </a>

@@ -164,7 +164,10 @@ export default function Contact() {
                   className={`arrow-wrapper ${isSubmitting || submitStatus === "success" ? "opacity-0 pointer-events-none" : "opacity-100"}`}
                   aria-hidden="true"
                 >
-                  <img src="/images/arrow-down.svg" alt="" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/arrow-down.svg`}
+                    alt=""
+                  />
                 </div>
               </button>
 
