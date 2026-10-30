@@ -1,21 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #b8292f;
-      }
-
-      .cls-2 {
-        fill: #181a1c;
-        font-family: ReggaeOne-Regular, 'Reggae One';
-        font-size: 600px;
-        stroke: #181a1c;
-        stroke-miterlimit: 10;
-        stroke-width: 8px;
-      }
-    </style>
-  </defs>
-  <rect class="cls-1" width="1024" height="1024"/>
-  <text class="cls-2" transform="translate(35.46 742.91)"><tspan x="0" y="0">DB</tspan></text>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="32"/>
 </svg>

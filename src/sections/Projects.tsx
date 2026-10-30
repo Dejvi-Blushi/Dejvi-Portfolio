@@ -69,6 +69,13 @@ export default function Projects() {
             <div className="text-content">
               <h2 className="text-center">T&T Real Estate</h2>
             </div>
+
+            <p className="mt-1 text-lg">
+              A full-stack real estate platform where users can log in, post
+              listings, and browse homes. Built with Next.js, Clerk, and
+              Supabase for backend data, using Shadcn UI for a clean, modern
+              interface.
+            </p>
           </div>
 
           <div className="project-list-wrapper">
@@ -82,7 +89,15 @@ export default function Projects() {
                 </div>
               </a>
 
-              <h2 className="text-center">CryptoApp</h2>
+              <div>
+                <h2 className="text-center">CryptoApp</h2>
+
+                <p className="mt-1 text-lg">
+                  A dashboard where users can search for cryptocurrencies and
+                  click on them to view real-time market updates, utilizing
+                  WebSockets to stream data on demand.
+                </p>
+              </div>
             </div>
 
             <div className="project" ref={project3Ref}>
@@ -95,7 +110,14 @@ export default function Projects() {
                 </div>
               </a>
 
-              <h2 className="text-center">Naruto Storm 2 DEMO (React)</h2>
+              <div>
+                <h2 className="text-center">Naruto Storm 2 DEMO (React)</h2>
+                <p className="mt-1 text-lg">
+                  A nostalgic web experiment replicating the PS3 boot sequence
+                  and title screen, featuring a fully interactive in-browser 3D
+                  model viewer powered by Three.js.
+                </p>
+              </div>
             </div>
           </div>
         </div>
