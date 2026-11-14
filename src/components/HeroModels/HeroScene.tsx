@@ -10,6 +10,7 @@ import gsap from "gsap";
 export default function HeroScene() {
   const isSmallScreen = useMediaQuery({query: "(max-width: 640px)"});
   const isMediumScreen = useMediaQuery({query: "(max-width: 768px)"});
+  const hasMouse = useMediaQuery({query: "(pointer: fine)"});
 
   const HeroSceneRef = useRef(null);
 
@@ -23,25 +24,25 @@ export default function HeroScene() {
   };
 
   return (
-    <div
-      className="hero-3d-layout md:px-20 px-5"
-      ref={HeroSceneRef}
-      style={{opacity: 0, willChange: "opacity"}}
-    >
+    <div className="hero-3d-layout md:px-20 px-5 opacity-0" ref={HeroSceneRef}>
       <Canvas
         camera={{position: [0, 0, 15], fov: 45}}
         onCreated={handleCanvasCreated}
+        style={{touchAction: hasMouse ? "none" : "pan-y"}}
       >
         <HeroLights />
 
-        <OrbitControls
-          enablePan={false}
-          enableZoom={!isSmallScreen}
-          maxDistance={20}
-          minDistance={5}
-          minPolarAngle={Math.PI / 5}
-          maxPolarAngle={Math.PI / 2}
-        />
+        {hasMouse && (
+          <OrbitControls
+            enabled={hasMouse}
+            enablePan={false}
+            enableZoom={!isSmallScreen}
+            maxDistance={20}
+            minDistance={5}
+            minPolarAngle={Math.PI / 5}
+            maxPolarAngle={Math.PI / 2}
+          />
+        )}
 
         <group
           scale={isMediumScreen ? 0.8 : 1}
