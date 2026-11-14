@@ -58,7 +58,7 @@ export default function Projects() {
         <div className="showcaselayout">
           <div className="first-project-wrapper" ref={project1Ref}>
             <a href="https://real-estate-app-dejvi.vercel.app">
-              <div className="image-wrapper card-border rounded-lg p-10">
+              <div className="image-wrapper card-border rounded-lg p-4 md:p-4 lg:p-8">
                 <img
                   src={`${import.meta.env.BASE_URL}images/project1.png`}
                   alt="T&T Real Estate"
@@ -81,7 +81,7 @@ export default function Projects() {
           <div className="project-list-wrapper">
             <div className="project" ref={project2Ref}>
               <a href="https://crypto-app-dejvi.vercel.app">
-                <div className="image-wrapper card-border rounded-lg p-10">
+                <div className="image-wrapper card-border rounded-lg p-4 md:p-4 lg:p-8">
                   <img
                     src={`${import.meta.env.BASE_URL}images/project2.png`}
                     alt="CryptoApp"
@@ -102,7 +102,7 @@ export default function Projects() {
 
             <div className="project" ref={project3Ref}>
               <a href="https://dejvi-blushi.github.io/Naruto-Storm-2-DEMO">
-                <div className="image-wrapper card-border rounded-lg p-10">
+                <div className="image-wrapper card-border rounded-lg p-4 md:p-4 lg:p-8 ">
                   <img
                     src={`${import.meta.env.BASE_URL}images/project3.png`}
                     alt="Naruto Storm 2 DEMO"

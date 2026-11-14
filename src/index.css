@@ -107,7 +107,7 @@ section {
       @apply flex flex-col w-full xl:w-[60%] xl:shrink-0;
 
       .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative w-full transition-transform duration-300 hover:scale-95;
+        @apply relative w-full transition-transform duration-300 hover:scale-95;
 
         img {
           @apply w-full h-full object-cover rounded-lg;
@@ -131,7 +131,7 @@ section {
       }
 
       .image-wrapper {
-        @apply xl:h-97 md:h-72 h-96 relative w-full transition-transform duration-300 hover:scale-95;
+        @apply relative w-full transition-transform duration-300 hover:scale-95;
       }
 
       img {
